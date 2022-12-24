@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bgc-anun:hsl(224, 23%, 55%);
+    --bgc-btn:hsl(245, 75%, 52%);
+    --bgc-card:hsl(225, 100%, 98%);
+    --bgc-plan:hsl(225, 100%, 94%);
+    --c-tittle:hsl(223, 47%, 23%);
+}
+body{
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+main{
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 2px solid rgb(228, 225, 225);
+    margin: 0 auto;
+    max-width: 450px;
+}
+h1{
+    font-weight: 900;
+    padding: 1rem;
+    text-align: center;
+}
+p{
+    color: rgb(107, 107, 107);
+    font-weight: 500;
+    text-align: center;
+}
+
+.img1{
+    -moz-border-radius: 1rem 1rem 0 0;
+    -ms-border-radius: 1rem 1rem 0 0;
+    -o-border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.plan{
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    align-items: center;
+    background-color: var(--bgc-card);
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: 48px 30% 40%;
+    margin: 1rem auto;
+    padding: .5rem;
+    width: 80%;
+} 
+
+.plan div:last-child{
+    grid-column: 4/5;
+}
+.price{
+    padding: .5rem;
+}
+.btns{
+    margin: auto;
+    padding: 1rem 2rem 0;
+    width: 95%;
+}
+.btn-blue{
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    background-color: #382AE1;
+    border-radius: .5rem;
+    box-shadow: 2px 6px 7px  rgb(192, 186, 252);
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-white{
+    color: rgb(143, 142, 142);
+    display: block;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}

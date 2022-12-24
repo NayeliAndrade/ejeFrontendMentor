@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+.attribution { 
+    font-size: 11px; 
+    padding: 2rem;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body{
+    margin: 0 auto;
+    max-width: 966px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-p: hsl(0, 36%, 70%);
+    --color-tittle: hsl(0, 6%, 24%); /*crea variables*/
+    --ffamily: 'Josefin Sans', sans-serif;
+    --fsize:40px;
+    --fweight-btn:300;
+    --fweight-tittle:600;
+    --margin-header:2rem;
+    --padding-h1:2rem;
+    --weight-p:400;
+}
+header{
+    margin: var(--margin-header);
+}
+.image{
+    background-image: url(../img/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+}
+
+h1:hover{
+    transform: scale(1.5);
+}
+.text h1:first-of-type{
+    font-family: var(--ffamily);
+    font-size: var(--fsize);
+    font-weight: var(--fweight-tittle);
+    padding: var(--padding-h1);
+    text-align: center;
+    text-transform: uppercase;
+}
+.text span:first-of-type{
+    color: var(--color-p);
+}
+.text p:first-of-type{
+    color: var(--color-p);
+    font-family: var(--ffamily);
+    font-weight: var(--fweight-p);
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+.text div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+}
+input{
+    border-radius: 10rem;
+    border: 2px solid var(--color-p);
+    color: var(--color-p);
+    padding: .5rem 1rem;
+    text-decoration: none;
+    width: 20rem;
+
+}
+::placeholder{
+    color: var(--color-p);
+}
+
+p:hover{
+    -moz-transform: skew(6deg);
+    -ms-transform: skew(6deg);
+    -o-transform: skew(6deg);
+    -webkit-transform: skew(6deg);
+    transform: skew(6deg);
+}
+@media screen and (min-width:370px) {
+    body{
+        display: grid;
+        place-content: center;
+    }
+    h1{
+        width: 65%;
+    }
+}
+@media screen and (min-width:600px) {
+    body{
+        display: grid;
+        height: 100vh;
+        place-content: center;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text h1:first-of-type{
+        text-align: left;
+    }
+    .image{
+        background-image: url(../img/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        grid-column: 2/-1;
+        grid-row: 1/3;
+        height: 100%;
+        
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+}
